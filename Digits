@@ -1,0 +1,27 @@
+#include<stdio.h>
+int sum(int num);
+int main()
+{
+	int num;
+	int result;
+	printf("enter any number:");
+	scanf("%d",&num);
+	result = sum(num);
+	printf("%d",result);
+ }
+
+
+
+int sum(int num)
+{
+ int ans;
+ while(num!=0)
+ {
+  ans+= num%10;
+  num= num/10;
+ }
+ return ans;
+}
+  
+
+
